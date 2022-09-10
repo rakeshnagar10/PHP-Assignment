@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div class="form-block">
+            <h2>Step 1: Your Details</h2>
+            <div class="form-group">
+                <div class="form-cell-block">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="first and last name" name="first-last-Name">
+                </div>
+                <div class="form-cell-block">
+                    <label>Email</label>
+                    <input type="text" class="form-control" placeholder="example@domain.com" name="email">
+                </div>
+                <div class="form-cell-block">
+                    <label>Phone</label>
+                    <input type="text" class="form-control" placeholder="EG. +447500000000" name="phone">
+                </div>
+            </div>
+            <h2>Step 2: Delivery address</h2>
+            <div class="form-group">
+                <div class="form-cell-block">
+                    <label>Address</label>
+                    <textarea name="address" rows="5" class="form-control" name="addess"></textarea>
+                </div>
+                <div class="form-cell-block">
+                    <label>Post code</label>
+                    <input type="text" class="form-control" name="post-code">
+                </div>
+                <div class="form-cell-block">
+                    <label>Country</label>
+                    <input type="text" class="form-control" name="country">
+                </div>
+            </div>
+            <h2>Step 3: Card details</h2>
+            <div class="form-group">
+                <div class="form-cell-block flex-column">
+                    <label>Card Type</label>
+                    <ul class="card-list">
+                        <li><input type="radio" name="card" id="visa"><img src="./images/visa.png" alt="" class="card-img"><label for="visa">Visa</label></li>
+                        <li><input type="radio" name="card" id="amex"><img src="./images/amex.png" alt="" class="card-img"><label for="amex">AmEx</label></li>
+                        <li><input type="radio" name="card" id="mastercard"><img src="./images/mastercard.png" alt="" class="card-img"><label for="mastercard">Mastercard</label></li>
+                    </ul>
+                    
+                </div>
+                <div class="form-cell-block">
+                    <label>Card Number</label>
+                    <input type="text" class="form-control" name="card-number">
+                </div>
+                <div class="form-cell-block">
+                    <label>Security code</label>
+                    <input type="text" class="form-control" name="security-code">
+                </div>
+                <div class="form-cell-block">
+                    <label>Name on card</label>
+                    <input type="text" class="form-control" placeholder="Exact name as on the card" name="card-name">
+                </div>
+            </div>
+            <div class="button-block">
+                <button type="button" class="button">Buy It!</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

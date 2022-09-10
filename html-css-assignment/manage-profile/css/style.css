@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding:20px 0;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+}
+::-webkit-input-placeholder { 
+    color: #BBBBB7;
+  }
+  
+  :-ms-input-placeholder { 
+    color: #BBBBB7;
+  }
+  
+  ::placeholder {
+    color: #BBBBB7;
+  }
+.profile-bg{
+    background-color: #642777;
+}
+.profile-block{
+    background-color: #fff;
+    border-radius: 3px;
+}
+.avtar{
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: #E8E8E8 solid 1px;
+    margin-bottom: 10px;
+}
+.avtar-detial h6{
+    margin-bottom: 0;
+}
+.avtar img{
+    max-width: 100%;
+}
+.profile-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.avtar-detial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avtar-detial a{
+    color: #9A9A9A;
+    font-size: 16px;
+    text-decoration: none;
+}
+.profile-block > .row >[class*="col-"]{
+    border-right:#E8E8E8 solid 1px
+}
+.profile-block > .row >[class*="col-"]:last-child{
+    border-right:none;
+}
+.btn-custome {
+    background-color:#642777 !important;
+    color: #fff !important;
+}

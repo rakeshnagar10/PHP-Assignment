@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding:20px 0;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.light-blue-bg{
+    background-color: #EBF8FE;
+    border:#D0DBDE solid 1px;
+}
+.product-img{
+    max-height: 200px;
+}
+.product-block{
+    background-color: #fff;
+    border: #D0DBDE solid 1px;
+}
+.product-cat{
+    font-size: 16px;
+    color: #BBBCC5;
+}
+.bottom-part p{
+    color: #000;
+    font-size: 16px;
+}
+.rating span{
+    margin-right: 5px;
+}
+.rating span img{
+    max-width: 30px;
+}

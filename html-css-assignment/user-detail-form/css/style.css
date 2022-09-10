@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding:20px;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+}
+::-webkit-input-placeholder { 
+    color: #BBBBB7;
+  }
+  
+  :-ms-input-placeholder { 
+    color: #BBBBB7;
+  }
+  
+  ::placeholder {
+    color: #BBBBB7;
+  }
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.form-block{
+    background-color: #9EBB2B;
+    max-width: 600px;
+    margin:0 auto;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+.form-cell-block{
+    background-color: #B9CF6A;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: #DAEE99 solid 1px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+.form-cell-block label{
+    min-width: 100px;
+    margin-right: 10px;
+    line-height: 28px;
+    font-weight: 700; 
+    font-size: 16px;
+}
+.form-control{
+    border: none;
+    font-size: 14px;
+    color: #444;
+    line-height: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 60%;
+}
+.card-list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.card-list li{
+    display: flex;
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.card-list li input[type="radio"]{
+    margin-right: 5px;
+    margin-top: 0;
+    margin-left: 0;
+}
+.card-list li .card-img{
+    max-width: 50px;
+    margin-right: 10px;
+}
+.button-block{
+    display:flex ;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.button-block .button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
