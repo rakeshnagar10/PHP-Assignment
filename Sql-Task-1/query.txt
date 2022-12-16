@@ -1,0 +1,32 @@
+Topic – SQL Task-1
+-----------------------
+a.select (FIRST_NAME) from employee.
+b.select FIRST_NAME,JOINING_DATE from employee.
+c.SELECT * FROM employee e ORDER BY e.FIRST_NAME ASC,e.SALARY DESC.
+d.Select * from employee where FIRST_NAME like '%o%'.
+e.Select * from employee where month(JOINING_DATE)='01'.
+f.SELECT DEPARTMENT, sum(SALARY) FROM employee GROUP BY DEPARTMENT ORDER by SALARY ASC;
+g.SELECT DEPARTMENT, MAX(SALARY) FROM employee GROUP BY DEPARTMENT;
+h.Select FIRST_NAME,INCENTIVE_AMT from employee a inner join incentives B on A.EM_ID = B.EMPLOYEE_REF_ID and INCENTIVE_AMT > 3000
+i.select *from employee group by SALARY order by  SALARY desc limit 1,1;
+k.CREATE VIEW employee_view as SELECT FIRST_NAME, LAST_NAME, SALARY FROM employee
+i.CREATE PROCEDURE `getHighsalary`() NOT DETERMINISTIC CONTAINS SQL SQL SECURITY DEFINER SELECT EM_ID,FIRST_NAME,DEPARTMENT, MAX(SALARY) FROM employee GROUP BY DEPARTMENT;
+M. create trigger employeeRecords after insert on employee for each row insert INTO employee(EM_ID,FIRST_NAME,LAST_NAME,SALARY,JOINING_DATE,DEPARTMENT)VALUES(8,"JERRY","JOSE",550000,CURRENT_DATE,"BANKING");
+
+
+Topic – SQL  Task-2:
+-------------------
+a. SELECT * FROM orders WHERE AMT > 1000;
+b. SELECT SNO,CITY, COMM FROM sale_person WHERE CITY = "LONDON" AND COMM > 0.1;
+c. SELECT SNO,SNAME,CITY,COMM FROM sale_person WHERE CITY='BERCELONA' OR CITY ="LONDON";
+d. SELECT SNO,CITY, COMM FROM sale_person WHERE COMM > 0.1 and COMM < 0.12;
+E. SELECT CNM,CNAME CITY, RATING, SNO FROM customer WHERE CITY = "";
+G. SELECT SNO, SNAME FROM sale_person WHERE SNAME IN ("PEEL", "MOTIKA");
+H. SELECT CNM, CNAME FROM customer WHERE CNAME LIKE 'H%';
+   SELECT CNM, CNAME FROM customer WHERE CNAME LIKE 'G%';
+j. SELECT ONM,AMT,ODE, CNM, SNO FROM orders WHERE AMT = "";
+I. SELECT * FROM customer WHERE NOT (CITY = 'ROME' OR RATING <= 100);
+k. SELECT SNO,COUNT(*) FROM orders GROUP BY SNO;
+
+
+SELECT EM_ID,FIRST_NAME,DEPARTMENT, MAX(SALARY) FROM employee GROUP BY DEPARTMENT;
