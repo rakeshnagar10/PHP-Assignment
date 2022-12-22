@@ -1,0 +1,73 @@
+OOPS:
+-----
+* What Is Object Oriented Programming?
+- Object Oriented is an approach to software development that models application around real world objects such as employees, cars, bank accounts, etc. A class defines the properties and methods of a real world object. An object is an occurrence of a class.
+
+* What Are Properties Of Object Oriented Systems?
+- - Encapsulation
+  - Abstraction
+  - Inheritance
+  - Polymorphism
+
+* What Is Difference Between Class And Interface?
+Class:
+------
+- As we already know, an interface is actually defined by an interface keyword where all the methods are abstract. In addition to this, all the methods declared in this type of class must be declared in public which reflects the true nature of an interface.
+
+Interface:
+----------
+- In PHP, an abstract class is one being partially implemented by any developer. It might contain at least one abstract method which is basically a method without any written code. It just contains the name and the parameters and has been marked as “abstract”.  
+
+* What Is Overloading?
+- PHP property overloading is used to create dynamic properties in the object context. For creating these properties no separate line of code is needed. A property associated with a class instance, and if it is not declared within the scope of the class, it is considered as overloaded property
+
+*What Is T_PAAMAYIM_NEKUDOTAYIM (Scope Resolution Operator (::) with Example
+That is a little victory for sure, but as Eric points out it’s pretty damn confusing to still see that token name in there.
+
+example:
+--------
+ <?php
+class MyClass {
+    const CONST_VALUE = 'A constant value';
+}
+
+$classname = 'MyClass';
+echo $classname::CONST_VALUE;
+
+echo MyClass::CONST_VALUE;
+?>
+
+* What are the differences between abstract classes and interfaces?
+- An abstract class can contain both abstract and non-abstract methods.
+- Interface contains only abstract methods.
+
+* Define Constructor and Destructor?
+- Constructors: Constructors are called when an object is created from a class.
+- Destructors: Destructors are called when an object destructs. Usually, it is when the script ends.
+
+* How to Load Classes in PHP?
+- PHP load classes are used for declaring its object etc. in object oriented applications. PHP parser loads it automatically, if it is registered with spl_autoload_register() function. PHP parser gets the least chance to load class/interface before emitting an error.
+
+* How to Call Parent Constructor?
+- We can't run directly the parent class constructor in child class if the child class defines a constructor. In order to run a parent constructor, a call to parent::__construct() within the child constructor is required.
+
+* Are Parent Constructor Called Implicitly When Create An ObjectOf Class?
+- Parent constructors are not called implicitly if the child class defines a constructor. In order to run a parent constructor, a call to parent::__construct() within the child constructor is required
+
+* What Happen, If Constructor Is Defined As Private Or Protected?
+- If a constructor is declared as private, then its objects are only accessible from within the declared class. You cannot access its objects from outside the constructor class.
+
+* What are PHP Magic Methods/Functions?
+- Magic methods are special methods which override PHP's default's action when certain actions are performed on an object.
+
+* List them Write program for Static Keyword in PHP?
+- The static keyword is also used to declare variables in a function which keep their value after the function has ended.
+
+* Create multiple Traits and use it in to a single class?
+a trait is a way to enable developers to reuse methods of independent classes that exist in different inheritance hierarchies.
+
+* Write PHP Script of Object Iteration?
+- PHP provides a way for objects to be defined so it is possible to iterate through a list of items, with, for example a foreach statement. By default, all visible properties will be used for the iteration.
+
+* Use of The $this keyword
+- this is declared like a variable declaration (with the ‘$’ sign) even though it is a reserved keyword

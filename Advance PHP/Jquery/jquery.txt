@@ -1,0 +1,41 @@
+a) What is jQuery?
+- jQuery is a lightweight, "write less, do more", JavaScript library.
+
+b) How are JavaScript and jQuery different?
+JavaScript:
+----------
+- Though JavaScript is the basic language from which jQuery has evolved, jQuery makes event handling, DOM manipulation, Ajax calls much easier than JavaScript. jQuery also allows us to add animated effects on our web page which takes a lot of pain and lines of code with JavaScript.
+
+jQuery: 
+-------
+- jQuery has in-built plugins to perform an operation on a web page. We just have to include or import the plugin in our webpage to use it. Thus plugins allows us to create abstractions of animations and interactions or effects.
+
+c) Which is the starting point of code execution in jQuery?
+- $(document). ready() function is the starting point of jQuery code. It is executed when DOM is loaded.
+
+d) Document Load Vs Window. Load() jQuery
+Document Load:
+--------------
+- The ready() method is used to make a function available after the document is loaded. Whatever code you write inside the $( document ).ready() method will run once the page DOM is ready to execute JavaScript code.
+
+Window. Load:
+-------------
+- The code which gets included inside $( window ).on( "load", function() { ... }) runs only once the entire page is ready (not only DOM).
+
+e) What is the difference between prop and attr?
+prop:
+-----
+- This method is mainly used when the user wants to change the value for an HTML tag’s attribute.
+
+attr:
+-----
+This method is mainly used to set the default value for an HTML tag’s attribute.
+
+f) Explain Difference Between JQuery And JavaScript?
+JavaScript:
+-----------
+JavaScript is an independent language and can exist on its own.
+
+jQuery:
+-------
+jQuery is a JavaScript library. It would not have been invented had JavaScript was not there. jQuery is still dependent on JavaScript as it has to be converted to JavaScript for the browser in-built JavaScript engine to interpret and run it.
