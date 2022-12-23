@@ -70,4 +70,6 @@ a trait is a way to enable developers to reuse methods of independent classes th
 - PHP provides a way for objects to be defined so it is possible to iterate through a list of items, with, for example a foreach statement. By default, all visible properties will be used for the iteration.
 
 * Use of The $this keyword
-- this is declared like a variable declaration (with the ‘$’ sign) even though it is a reserved keyword
+- public function changeColor() {
+	$this -> color = 'white';
+  }
